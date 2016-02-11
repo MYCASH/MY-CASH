@@ -6,7 +6,16 @@
         >
         </button>
     </ion-nav-buttons>
-    <ion-content class="has-header">
-        <h1>Income</h1>
+    <ion-content class="has-header center padding">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Total Price" ng-model="data.price">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Item Type" ng-model="data.item">
+            </label>
+        </div>
+
+        <button class="button button-block button-calm" ng-click="save()">Save</button>
     </ion-content>
 </ion-view>
