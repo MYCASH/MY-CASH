@@ -1,6 +1,6 @@
 <ion-side-menus>
     <ion-pane ion-side-menu-content>
-        <ion-nav-bar class="bar-calm">
+        <ion-nav-bar class="bar-positive custom">
             <ion-nav-back-button class="button-clear">
                 <i class="icon ion-chevron-left"></i> Back
             </ion-nav-back-button>
@@ -10,25 +10,31 @@
     </ion-pane>
 
     <ion-side-menu side="left">
-        <header class="bar bar-header bar-calm">
+        <header class="bar bar-header bar-positive">
             <h1 class="title">Menu</h1>
         </header>
         <ion-content class="has-header">
+            <!-- <div class="list-group">
+                <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
+                <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
+                <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+                <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+            </div> -->
             <ion-list>
                 <ion-item nav-clear menu-close href="#/app/home">
-                    Home
+                    <i class="positive fa fa-home fa-fw"></i>&nbsp; Home
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/income">
-                    Income
+                    <i class="calm fa fa-sign-in fa-fw"></i>&nbsp; Income
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/expense">
-                    Expense
+                    <i class="assertive fa fa-sign-out fa-fw"></i>&nbsp; Expense
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/report">
-                    Report
+                    <i class="balanced fa fa-pie-chart fa-fw"></i>&nbsp; Report
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/setting">
-                    Setting
+                    <i class="royal fa fa-cog fa-fw"></i>&nbsp; Settings
                 </ion-item>
             </ion-list>
         </ion-content>
